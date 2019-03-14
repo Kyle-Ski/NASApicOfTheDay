@@ -1,0 +1,23 @@
+{
+  "name": "NASApictureOfTheDay",
+  "version": "1.0.0",
+  "description": "An API to get a random NASA picture of the day for a google chrome extention.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Kyle-SKi",
+  "GitHub": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.10"
+  }
+}
