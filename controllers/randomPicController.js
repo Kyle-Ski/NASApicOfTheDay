@@ -16,7 +16,7 @@ function getPic(req, res, next) {
   return fetch(NASA_URL)
     .then(response => response.json())
     .then(pic => res.json({ pic }))
-    .catch(err => console.error(err))
+    .catch(err => res.json({ err }))
 }
 
 module.exports = {
