@@ -14,7 +14,7 @@ function getPic(req, res, next) {
   const NASA_URL = `https://api.nasa.gov/planetary/apod?date=${random}&api_key=${API_KEY}`
   return fetch(NASA_URL)
     .then(response => response.json())
-    .then(pic => res.json({ pic: pic, date: random }))
+    .then(pic => res.json({ pic }))
     .catch(err => {
       console.warn(err)
       return res.json({ err })
